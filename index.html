@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title> RCCG Grace Pavilion</title>
+  </head>
+  <body>
+    <!-- Navigationbar -->
+    <nav id="navbar" class="shadow-sm p-3 mb-5 bg-white rounded navbar navbar-expand-lg bg-white navbar-light py-3 fixed-top">
+      <div class="container">
+        <img id="logo" style="height:8vh; width:8vh;" src="https://upload.wikimedia.org/wikipedia/commons/9/9b/Rccg_logo.png" alt="">
+        <a href="#" class=" p-2 navbar-brand fw-bolder">RCCG Grace Pavilion</a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu">
+         
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="#" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#who_are_we" class="nav-link">Who are we</a>
+            </li>
+            <li class="nav-item">
+              <a href="#online_giving" class="nav-link">Online Giving</a>
+            </li>
+            <li class="nav-item">
+              <a href="#media_resources" class="nav-link">Media resources</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--Carousel slide-->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="https://img.freepik.com/free-photo/christian-life-crisis-prayer-god-woman-pray-god-blessing-wishing-have-better-life-woman-hands-praying-god-with-bible-begging-forgiveness-believe-goodness_1150-12950.jpg?w=1060&t=st=1667605830~exp=1667606430~hmac=0ab5e05abfc2824b8dc22133790b7bcde49319e076829e35f1b145df823f743c" alt="First slide">
+          <div class="carousel-caption  d-sm-block">
+            <h5 class="d-block">Jesus The Same Yesterday, Today And Forever(Heb 13:8)</h5>
+            <p>Jesus still heals,he still blesses, he still delivers, fellowshi with us and experience the never changing God.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="https://img.freepik.com/free-photo/jesus-hand-rescue-reaching-humans-one_329181-20832.jpg?w=900&t=st=1667606007~exp=1667606607~hmac=ed53652bbb94e0af73c8a51177b096ae57064a9d71cc15118757cc54d98e78b6" alt="Second slide">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>koinonia</h5>
+            <p>'Forsake not the gathering of the brethren'(Heb 10:25).</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="https://img.freepik.com/free-photo/diverse-friends-students-shoot_53876-47012.jpg?w=900&t=st=1667606267~exp=1667606867~hmac=c3d7e6e3cc29d74ae4609943098edf7198a708e75b7dad4ed34c3b2b2e37b50b" alt="Third slide">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Worshippers</h5>
+            <p> But the hour is coming, and now is, when the true worshipers will worship the Father in spirit and truth, for such the Father seeks to worship him. [24] God is spirit, and those who worship him must worship in spirit and truth.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+ </div>
+</section>
+<!--media-->
+<!-- <section id="Social_media"class="p-5">
+  <h2 class=" text-center" >Connect with us at</h2>
+  <div class="bg-light text-center ">
+    <div class="container">
+      <i class=" leadbi bi-facebook m-3"></i>
+      <i class="lead bi bi-whatsapp m-3"></i>
+      <i class="lead bi bi-telephone m-3"></i>
+
+    </div>
+  </div>
+</section>
+ -->
+
+    <!-- Boxes -->
+    <section class="p-5"  id="media_resources" >
+      <div class="container">
+        <div class="row text-center g-4 ">
+          <div class="col-md mb-3 ">
+            <div class="card bg-light text-dark ">
+              <div class="card-body text-center">
+                <h3 class="card-title">Sunday School</h3>
+                <p class="card-text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Iure, quas quidem possimus dolorum esse eligendi?
+                </p>
+                <a href="#"class="btn btn-outline-info">Visit</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card bg-light text-dark">
+              <div class="card-body text-center">
+                <h3 class="card-title">Online Giving</h3>
+                <p class="card-text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Iure, quas quidem possimus dolorum esse eligendi?
+                </p>
+                <a href="#" class="btn btn-outline-info">Make Payments</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md mb-3">
+            <div class="card bg-light text-dark">
+              <div class="card-body text-center">
+                <h3 class="card-title ">Programmes</h3>
+                <p class="card-text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Iure, quas quidem possimus dolorum esse eligendi?
+                </p>
+                <a href="#" class="btn btn-outline-info">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="row text-center g-4">
+          <div class="col-md">
+            <div class="card bg-light text-dark">
+              <div class="card-body text-center p-3">
+                <h3 class="card-title ">Guidance & Counselling</h3>
+                <p class="card-text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Iure, quas quidem possimus dolorum esse eligendi?
+                </p>
+                <a href="#" class="btn btn-outline-info">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card bg-light text-dark">
+              <div class="card-body text-center">
+                <h3 class="card-title mb-3">Join The Work Force</h3>
+                <p class="card-text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Iure, quas quidem possimus dolorum esse eligendi?
+                </p>
+                <a href="#" class="btn btn-outline-info">Join</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card bg-light text-dark">
+              <div class="card-body text-center">
+                <h3 class="card-title mb-3">Our History</h3>
+                <p class="card-text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Iure, quas quidem possimus dolorum esse eligendi?
+                </p>
+                <a href="https://www.rccg.org/our-history/"  aria-label="Basic outlined example" class="btn btn-outline-info">Read More</a>
+              </div>
+            </div>
+          </div>
+          </div>
+        
+      </div>
+    </section>
+
+    <!-- Salvation section -->
+    <section id="learn" class=" bg-dark text-light p-5">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md p-5">
+            <h2  >>>>Steps To Salvation<<<</h2>
+            <p class="lead mt-3">
+              “Except a man be born again, <b class="fw-bolder"> he cannot see the kingdom of God</b>”(John 3:3)
+            </p>
+                <div class="accordion accordion-flush" id="questions">
+                  <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                          - Acknowledge all your sins Acts 2:36 - 38
+                        </button>
+                      </h2>
+                      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Therefore let all the house of Israel know assuredly, that God hath made the same Jesus, whom ye have crucified, both Lord and Christ. 37 Now when they heard this, they were pricked in their heart, and said unto Peter and to the rest of the apostles, Men and brethren, what shall we do? 38 Then Peter said unto them, Repent, and be baptized every one of you in the name of Jesus Christ for the remission of sins, and ye shall receive the gift of the Holy Ghost.</div>
+                      </div>
+                    </div>
+              </div>
+            </div>
+            <div class="accordion accordion-flush mt-3" id="questions">
+              <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                      - Confess those sins. Galatians 5:19 - 21
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Now the works of the flesh are manifest, which are these; Adultery, fornication, uncleanness, lasciviousness, 20 Idolatry, witchcraft, hatred, variance, emulations, wrath, strife, seditions, heresies, 21 Envyings, murders, drunkenness, revellings, and such like: of the which I tell you before, as I have also told you in time past, that they which do such things shall not inherit the kingdom of God.</div>
+                  </div>
+                </div>
+          </div>
+        </div>
+        <div class="accordion accordion-flush mt-3" id="questions">
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  - Ask for forgiveness of sin . I John 1:9
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">If we confess our sins, he is faithful and just to forgive us our sins, and to cleanse us from all unrighteousness.</div>
+              </div>
+            </div>
+      </div>
+    </div>
+    <div class="accordion accordion-flush mt-3 " id="questions">
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              - Repent of those sins. Act 3:19
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Repent ye therefore, and be converted, that your sins may be blotted out, when the times of refreshing shall come from the presence of the Lord.</div>
+          </div>
+        </div>
+  </div>
+</div>
+<div class="accordion accordion-flush mt-3 " id="questions">
+  <div class="accordion accordion-flush" id="accordionFlushExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingOne">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+          - Forsake all your old way and sinful habit Luke 14: 33
+        </button>
+      </h2>
+      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">So likewise, whosoever he be of you that forsaketh not all that he hath, he cannot be my disciple.</div>
+      </div>
+    </div>
+</div>
+</div>
+<div class="accordion accordion-flush mt-3 " id="questions">
+  <div class="accordion accordion-flush" id="accordionFlushExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingOne">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+          - Join a Bible believing Church around. Hebrew 10:25
+        </button>
+      </h2>
+      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">Not forsaking the assembling of ourselves together, as the manner of some is; but exhorting one another: and so much the more, as ye see the day approachin</div>
+      </div>
+    </div>
+</div>
+</div>
+            <button
+           float-left
+            class="btn btn-outline-light btn-lg mt-5"
+            data-bs-toggle="modal"
+            data-bs-target="#enroll"
+          >
+            Let's Pray
+          </button>
+            </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="online_giving" class="p-5 ">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md p-5">
+            <h2>Online Giving</h2>
+            <p>
+              The Bible is replete with virtually inexhaustible provisions for Man’s comfort here on earth and in eternity.
+               The oldest singular limitation is Man’s refusal to simply obey the WORD of GOD. 3 John 2 for instance reaffirmed God’s 
+               persistent intention and plan for man: Beloved, I wish above all things that thou mayest prosper and be in health,
+               even as thy soul prosperity. However, God not wanting to appear to man as a Dictator, grants man the freewill to enjoy
+               virtually endless benefits ONLY on the condition of total obedience, to the giver of these benefits -The Almighty GOD.
+            </p>
+            <p class="lead">
+              All forms of giving to the mission be it 
+               Covenant Partners, Nehemiah Builders, Tithe & Offering can be made via a click of the button below.
+            </p>
+            <a href="#" class="btn btn-light mt-3">
+              <i class="bi bi-chevron-right"></i> Read More
+            </a>
+            <button class=" btn btn-primary btn-md mt-3" type="button">Make Payments</button>
+          </div>
+          <div class="col-md">
+            <img src="https://www.churchsupplies-shop.com/storage/images/image?remote=https%3A%2F%2Fwww.churchsupplies-shop.com%2FWebRoot%2FStore10%2FShops%2F62233561%2F4A7D%2FE0AF%2F8481%2F63F1%2F34F3%2FC0A8%2F28BA%2F8464%2FKlingelbeutel-r.png&shop=62233561" class="img-fluid" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+      <section id="who_are_we" class="p-5 bg-secondary">
+      <div class="container">
+        <h2 class="text-center text-white">Who are we?</h2>
+      
+        <div class="row g-4">
+         <!--  <div class="col-md-6 col-lg-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img
+                  src="https://randomuser.me/api/portraits/men/11.jpg"
+                  class="rounded-circle mb-3"
+                  alt=""
+                />
+                <h3 class="card-title mb-3">John Doe</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Assumenda accusamus nobis sed cupiditate iusto? Quibusdam.
+                </p>
+                <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+              </div>
+            </div>
+          </div> -->
+            <img src="IMG_20221113_124812_517.jpg" alt="">
+            <p class="lead text-center text-white mb-1 fw-bold">
+              RCCG Grace Pavilion
+             </p>
+             <div class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto vitae harum eaque debitis quia quae reiciendis nostrum, dolores velit adipisci nesciunt fugit incidunt totam libero. Provident perspiciatis beatae vitae eaque.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius voluptatibus officia voluptates! Tenetur harum necessitatibus explicabo earum, unde debitis neque reiciendis eveniet suscipit aliquid nihil at alias incidunt, qui expedita. Deserunt blanditiis accusantium voluptates ut maxime aspernatur officiis sapiente nulla temporibus distinctio, ab quis consectetur quisquam facere autem impedit provident obcaecati architecto voluptate. Ad nisi eum tempore, nam voluptatem ea aspernatur, sapiente aliquid numquam magni fugit voluptatibus molestias porro veniam. Aliquam veritatis dolorum adipisci velit dicta? Asperiores autem pariatur praesentium unde fugit quia. Iure molestiae doloribus debitis quas nemo odit error tenetur nihil, facilis, dolorum aperiam harum in officiis neque.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, quisquam nisi maxime reprehenderit perferendis aliquam porro molestias ea illo quidem eligendi iste! Dolore laboriosam tempora eum maiores, fugit reprehenderit facere id repellendus numquam! Pariatur dolorem obcaecati veniam ab repellendus eveniet nihil vel debitis deserunt quaerat laboriosam in mollitia, quae quibusdam eum illo nemo ullam est minima voluptatem fugiat placeat magnam ducimus. Nulla in nam nemo porro expedita libero aspernatur excepturi adipisci quisquam cumque accusamus tempore error quae corporis nihil delectus corrupti molestias vel magnam voluptatem quaerat, iste quo? Commodi perferendis quis quas vel soluta, eius magnam eos, ad porro repellendus ducimus non delectus, quidem sit quod numquam nulla consectetur optio! Autem quasi neque tenetur nobis facilis, explicabo nisi reiciendis deleniti, magnam accusamus, in necessitatibus! Sequi necessitatibus, libero expedita, obcaecati fuga maiores itaque sit possimus autem nemo repellendus pariatur a dolores cupiditate facere mollitia. Libero amet id, expedita et quis autem nisi! Alias quia quidem doloribus ex veritatis officia, veniam omnis eum aliquid dignissimos temporibus sequi totam ea architecto expedita. Explicabo quaerat aspernatur maxime quam odit laboriosam veniam, deleniti blanditiis magni. Sequi debitis consectetur quasi facilis suscipit dicta consequuntur, in provident aliquam aspernatur ipsum illum adipisci voluptas neque omnis quod incidunt veritatis, mollitia ut dignissimos assumenda animi obcaecati quae? Reprehenderit ut aliquam voluptates libero earum repellendus quo repellat deserunt impedit eaque sunt, rerum sapiente, voluptatibus hic possimus. Iure atque cumque accusantium eveniet labore facilis libero earum blanditiis nam rerum ratione, voluptatum at! Magnam ut fugit voluptate accusamus, laborum optio laboriosam? Asperiores, corrupti! Voluptates quod porro, eligendi eos, ex harum fugiat illum omnis dolores illo et dolore. Voluptate officia iste eveniet. Laborum ducimus molestiae quo. Debitis molestiae enim ipsum omnis, dicta magnam sed eveniet voluptates eligendi, ipsa numquam fugiat blanditiis, ex nisi! Obcaecati adipisci nobis veniam totam deleniti placeat quos, doloribus hic sequi, non, alias ipsam quidem laboriosam ut cum magnam similique quis accusamus libero. Beatae a, facilis aliquid repudiandae fuga similique temporibus ea error et eveniet? Vitae quae aspernatur, velit maiores est voluptates minus ipsum voluptatem provident repellat perspiciatis deserunt, aut fuga nemo ab culpa. Quae eveniet nam sed quibusdam delectus exercitationem natus maiores. Consectetur officiis debitis, velit, placeat doloribus eveniet assumenda reiciendis saepe beatae officia nobis ipsam ea vero itaque necessitatibus possimus recusandae deserunt suscipit aut sint culpa est qui hic dolore. Laborum ad quam quidem deserunt architecto placeat molestiae, quibusdam cum consequuntur tenetur, quaerat quos eius dolorum vero deleniti ea, a ipsa fugit quae qui atque consequatur odio perferendis nam. Ut ratione eaque nihil, maxime numquam, dolorem libero, voluptatibus itaque animi praesentium laudantium sequi. Distinctio exercitationem ipsa earum quaerat nesciunt, quo dolores illum perspiciatis molestiae omnis odio non voluptate quis impedit et. Aspernatur voluptas fugit perferendis hic, reiciendis beatae mollitia nihil nostrum commodi quidem asperiores veniam facilis ut enim, quibusdam doloremque repellat eaque quia non, sit nam. Excepturi quas delectus illo necessitatibus in veritatis quam, quibusdam beatae quis sequi. Esse ea quibusdam ut iusto quod voluptas commodi, nihil debitis! Ipsum illum ullam distinctio adipisci repellendus aut, iusto sunt amet?
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Map -->
+    <section class="p-5">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md">
+            <h2 class="text-center mb-4">Come And Worship With Us</h2>
+            <ul class="list-group list-group-flush lead">
+              <li class="list-group-item">
+                <span class="fw-bold">Main Location:</span> 14 Ayegbami estate Imowo-nla Ikorodu Lagos
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">Phone:</span> (+234) xxx xxx xxxx
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold"> Email:</span>
+                RCCGGracePavilion@gmail.com
+              </li>
+            </ul>
+          </div>
+          <div class="col-md">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d253731.07411064891!2d3.4308095999999955!3d6.4520192000000085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sng!4v1668641695298!5m2!1sen!2sng" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <!-- <div id="map"></div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="p-5 bg-dark text-white text-center position-relative">
+      <div class="container">
+        <img src="https://www.rccg.org/wp-content/uploads/2020/07/RCCG-WEB.png" alt="">
+        <p class="lead">&copy; Copyright RCCG Grace Pavilion 2022. All Right Reserved.</p>
+        <i class="bi bi-facebook m-3"></i>
+        <i class="bi bi-whatsapp m-3"></i>
+        <i class="bi bi-telephone m-3"></i>
+        <a href="#" style="height:fit-content; width: fit-content;  " class=" position-absolute bottom-0 end-0 p-5">
+          <i style="padding:100%;  border: 2px solid #f0ad4e ; border-radius:50px; color: #f0ad4e;"  class=" bi bi-chevron-double-up "></i>
+        </a>
+      </div>
+    </footer>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="enroll"
+      tabindex="-1"
+      aria-labelledby="enrollLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="enrollLabel">New Converts</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="first-name" class="col-form-label">
+                  First Name:
+                </label>
+                <input type="text" class="form-control" id="first-name" />
+              </div>
+              <div class="mb-3">
+                <label for="last-name" class="col-form-label">Last Name:</label>
+                <input type="text" class="form-control" id="last-name" />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="col-form-label">Email:</label>
+                <input type="email" class="form-control" id="email" />
+              </div>
+              <div class="mb-3">
+                <label for="phone" class="col-form-label">Phone Number:</label>
+                <input type="tel" class="form-control" id="phone" />
+              </div>
+              <div class="mb-3">
+                <label for="phone" class="col-form-label">Address:</label>
+                <input type="tel" class="form-control" id="Address" />
+              </div>
+              <div class="mb-3">
+                <label for="phone" class="col-form-label">Prayer Request:</label>
+                <input type="tel" class="form-control" id="Prayer_Request" />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
